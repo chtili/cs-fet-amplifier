@@ -1,0 +1,15 @@
+.DS_Store
+Thumbs.db
+
+# LTspice
+*.raw
+*.op.raw
+*.log
+*-backup.asc
+*.bak
+
+# KiCad
+*.kicad_prl
+*-backups/
+_autosave-*
+fp-info-cache
