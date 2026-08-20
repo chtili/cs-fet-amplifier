@@ -6,7 +6,7 @@ Linear common source MOSFET amplifier with source degeneration.
 
 An ordinary common source MOSFET amplifier suffers from distortion, especially when the input swings
 unexpectedly. Adding a source resistor (source degeneration) trades away some raw gain for a more
-linear, predictable response that's less sensitive to the exact device parameters — this project
+linear, predictable response that's less sensitive to the exact device parameters. This project
 designs, hand-calculates, and simulates that trade-off for a specific target gain.
 
 ## Design
@@ -51,9 +51,7 @@ run and a 1 Hz–1 MHz AC sweep. Results are in [results/](results/).
   capacitors and input impedance) and above roughly 100 kHz (device/parasitic capacitance).
 - **Simulated gain (≈13.2×) came in higher than the hand-calculated target (10×).** The likely cause is
   the 2N7000 SPICE model's actual `kn`/`Vt` differing from the datasheet-derived hand estimate — `Vt`
-  in particular was only an estimate (2N7000 spec range is 0.8–3.0 V, and 1.5 V was a guess). Next step:
-  run a `.op` analysis to read the model's actual DC operating point and `gm`, then re-tune `Rd`/`Rs`
-  if a tighter match to the target gain matters for an eventual hardware build.
+  in particular was only an estimate (2N7000 spec range is 0.8–3.0 V, and 1.5 V was a guess).
 - **Not yet done:** measuring the actual -3 dB bandwidth edges precisely (rather than reading them
   qualitatively off the Bode plot), and building/measuring the circuit in hardware to compare against
   simulation.
