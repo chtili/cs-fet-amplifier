@@ -4,11 +4,11 @@ Linear common source MOSFET amplifier with source degeneration.
 
 ## Motivation
 
-[Why this project — what problem or goal motivated it.]
+An ordinary common source MOSFET amplifier suffers from distortion, especially when the input swings unexpectedly. 
 
 ## Design
 
-[Circuit topology, key design decisions and calculations, component selection.]
+See 
 
 ## Discussion
 
