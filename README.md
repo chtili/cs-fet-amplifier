@@ -54,4 +54,4 @@ run and a 1 Hz–1 MHz AC sweep. Results are in [results/](results/).
   in particular was only an estimate (2N7000 spec range is 0.8–3.0 V, and 1.5 V was a guess).
 - **Not yet done:** measuring the actual -3 dB bandwidth edges precisely (rather than reading them
   qualitatively off the Bode plot), and building/measuring the circuit in hardware to compare against
-  simulation.
+  simulation (lack of access to components and measuring tools while away from school). 
